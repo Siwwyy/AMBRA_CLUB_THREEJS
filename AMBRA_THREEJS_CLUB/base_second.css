@@ -1,0 +1,117 @@
+html
+  box-sizing: border-box
+  
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: inherit
+
+body
+  font-family: 'Century Gothic', sans-serif
+   
+h1, h2
+  color: white
+  text-transform: uppercase
+  font-weight: 100
+  margin-left: 20px
+  letter-spacing: 3px
+  
+#swag
+  color: white
+  font-size: 40px
+  margin-left: 20px
+  
+#header
+  background-color: black
+  height: 20vh
+  width: 100vw
+  display: flex
+  justify-content: center
+  align-items: center
+ 
+  label
+    color: white
+    text-transform: uppercase
+    letter-spacing: 2px
+    display: inline-block
+    border: 1px solid white
+    padding: 20px
+    border-radius: 2px
+    transition: all ease .3s
+    cursor: pointer
+    margin-left: 20px
+    max-width: 10%
+    text-align: center
+
+    &:hover
+      background-color: white
+      color: black
+   
+  #audio-controls
+    text-align: center
+    height: 100px
+    width: 90%
+    
+    & * 
+      transition: all ease .1s
+    
+    #audio-controls-top
+      padding-top: 20px
+      padding-left: 20px
+      padding-right: 20px
+      position: relative
+      
+      span
+        line-height: 40px
+        vertical-align: middle
+        color: white
+        letter-spacing: 2px
+        max-width: 10%
+              
+      input[type="range"]
+        appearance: none
+        -webkit-appearance: none
+        outline: 0
+        height: 2px
+        background-color: white
+        margin-left: 20px
+        margin-right: 20px
+        width: 75%
+        line-height: 40px
+        vertical-align: middle
+        cursor: pointer
+        transition: all ease .2s
+        
+      input[type=range]::-webkit-slider-thumb
+        appearance: none
+        -webkit-appearance: none
+        height: 20px
+        width: 2px
+        border: 0
+        background: transparent
+        cursor: pointer
+        background-color: white
+        position: relative
+        
+    #audio-controls-bottom
+      
+      #play-button
+        color: white
+        text-transform: uppercase
+        letter-spacing: 2px
+        cursor: pointer
+ 
+input[type="file"]
+  visibility: hidden
+  display: none
+  
+  
+#display
+  background-color: white
+  height: 80vh
+  
+  .bar
+    float: left
+    background-color: black
+    position: relative
+    will-change: height, width, margin-right
